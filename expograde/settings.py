@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-7p7^4p-72d+5d(73x*8-dz1dqun^e=ml(l=ou^d_mu8i==8r07
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['expogradeacademy.com','www.expogradeacademy.com']
 
 
 # Application definition
@@ -118,13 +119,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
+MEDIA_URL = '/media/'
+STATIC_ROOT ='/home/ueuypobw/public_html/static'
+MEDIA_ROOT ='/home/ueuypobw/public_html/media'
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = "/media/"
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
