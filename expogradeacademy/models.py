@@ -37,8 +37,6 @@ class feedbackform(models.Model):
 class featuredCourse(models.Model):
     name=models.CharField(default='',max_length=100)
     image=models.ImageField(default='', upload_to='attachments/')
-    oldprice=models.IntegerField(default='')
-    newprice=models.IntegerField(default='')
  
     def __str__(self):
         return self.name
@@ -47,8 +45,6 @@ class featuredCourse(models.Model):
 class popularCourse(models.Model):
     name=models.CharField(default='',max_length=100)
     image=models.ImageField(default='', upload_to='attachments/')
-    oldprice=models.IntegerField(default='')
-    newprice=models.IntegerField(default='')
  
     def __str__(self):
         return self.name
@@ -57,7 +53,7 @@ class popularCourse(models.Model):
 class teacher(models.Model):
     name=models.CharField(default='',max_length=100)
     subject=models.CharField(default='',max_length=100)
-    image=models.ImageField(default='', upload_to='attachments/')
+    
  
     def __str__(self):
         return self.name

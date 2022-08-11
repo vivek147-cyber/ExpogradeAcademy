@@ -68,37 +68,61 @@ Mentorship+ councling & Technology (College Exposure)"/>
   opacity: 0.7;">
     </center>
     <br>
-    <div class="row gx-5 mb-n10 z-1" style="justify-content:center; align-items: center;">
-        <div class="col-lg-4 mb-5">
+    <div class="row gx-5 mb-n10 z-1">
+        <div class="col-lg-6 mb-5">
             <div class="card" style="height:21rem; border:0px; box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);">
 
-                <img src="{% static 'images/1.jpg' %}" alt="..." style="height:21rem; ">
+           <img src="{% static 'images/amrendra.jpeg' %}" alt="amrendra" style="height:21rem; ">
 
-            </div>
-            <center style="margin-top:23px;">
-                <span>CE0 , Expograde Academy</span>
-                <H4>Amrendra</H4>
-            </center>
+       </div>
+           </div>
+        <div class="col-lg-6 mb-5">
+       
+            A passionate maths teacher and entrepreneur having completed his bachelors from NIT Allahabad and 5+ years of teaching IIT
+             JEE aspirants. A teacher at heart, he has taught 100+ students in multiple cities like Greater Noida, Prayagraj and Sultanpur. 
+             He is now on a mission to solve the problems of students for quality preparation of IIT JEE and helping them excel in their 
+             board exams here in Lucknow.
+             <br><br>~Amrendra Tripathi <br>CEO,Expograde Academy
         </div>
-
-
-        <div class="col-lg-4 mb-5">
-            <div class="card" style="height:21rem; border:0px; box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);">
-
-                <img src="{% static 'images/1.jpg' %}" alt="..." style="height:21rem; ">
-
-            </div>
-            <center style="margin-top:23px;">
-
-                <span>MD , Expograde Academy</span>
-                <H4>Ashish</H4>
-            </center>
+        
         </div>
-
-
-
-
-    </div>
+        <div class="row gx-5 mb-n10 z-1">
+            
+            
+                
+                <div class="col-lg-6 mb-5">
+                    <div class="card" style="height:28rem; border:0px; box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);">
+   
+                   <img src="{% static 'images/ashish1.jpg' %}" alt="ashish" style="height:28rem; ">
+   
+               </div>
+                   </div>
+                   <div class="col-lg-6 mb-5">
+           
+                    He is a physics lover from his childhood days, a space enthusiast, a leader, an entrepreneur 
+                    and a graduate of NIT Allahabad. He has taught students for over a year in Ballia and Lucknow. 
+                    He focuses on approach development & problem visualization in students. His vision now is to 
+                    transform the lives of students in Lucknow, providing them with Kota-like coaching facilities.
+                    <br><br>~Ashish Jaiswal <br>MD,Expograde Academy
+                </div>
+            </div>
+            <div class="row gx-5 mb-n10 z-1">
+                <div class="col-lg-6 mb-5">
+                    <div class="card" style="height:21rem; border:0px; box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);">
+   
+                   <img src="{% static 'images/gunjan.jpg' %}" alt="gunjan" style="height:21rem; ">
+   
+               </div>
+                   </div>
+                <div class="col-lg-6 mb-5">
+               
+                    Gunjan Bhatia is a distinguished academician with a wide experience in teaching and research at leading technical institutions .
+She received her B Tech in E&C from MNNIT , Allahabad post which she completed Masters on software systems from BITS Pilani .
+Apart from teaching she is fulfilling her social responsibility and is a active member of HCL Foundation apart from other contributions to environment and helping needy persons on regular basis .
+<br><br>~Gunjan Bhatia<br>Director,Expograde Academy
+                </div>
+                
+                </div>
 </div>
 
 
@@ -113,9 +137,9 @@ Mentorship+ councling & Technology (College Exposure)"/>
         {% for i in teachers %}
           <div class="col-lg-4 mb-5">
               <div class="card" style="width: 18rem; border:0px; box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);">
-                  <img src="{{i.image.url}}" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">{{i.name}}</h5>
+                    <center><h5 class="card-title">{{i.name}}</h5><center>
+                    <hr>
                     <span>{{i.subject}}</span>
                   </div>
               </div>

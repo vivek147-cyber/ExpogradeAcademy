@@ -12,14 +12,14 @@ class feedbackpost(admin.ModelAdmin):
     list_display=('name','classes','contactNumber','feedback')
 
 class popcourse(admin.ModelAdmin):
-    list_display=('name','image','oldprice','newprice')
+    list_display=('name','image')
 
 class featcourse(admin.ModelAdmin):
-    list_display=('name','image','oldprice','newprice')
+    list_display=('name','image')
 
 
 class teach(admin.ModelAdmin):
-    list_display=('name','image','subject')
+    list_display=('name','subject')
 
 admin.site.register(bookfreeclass,bfcpost)
 admin.site.register(contactform,contactpost)
